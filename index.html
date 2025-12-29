@@ -1,97 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hotel Country Villa - Shyafru</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to the most extraordinary hotel in Syafrubensi, Rasuwa">
+  <meta name="keywords" content="hotels at syafrubensi, hotel country villa, good hotels at syafru">
+  <title>Hotel Country Villa</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="jeena">
-  <div class="jeena1">
-    <div class="logo">
-      <img src="images/logo.png" alt="Hotel logo">
-    </div>
-
-    <div class="header-title">
-      <h1>HOTEL COUNTRY VILLA</h1>
-    </div>
-  </div>
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="rooms.html">Rooms</a></li>
-      </ul>
+   <header>
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo"><a href="index.html">HCV</a></h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-    <div class="jeena2">
-      <div class="slideshow">
-        <img src="images/IMG_2195.jpeg" class="slide active" />
-        <img src="images/IMG_2281.jpeg" class="slide" />
-        <img src="images/IMG_2291.jpeg" class="slide" />
-        <img src="images/IMG_2227.jpeg" class="slide" />
-        <img src="images/IMG_2221.jpeg" class="slide" />
-      </div>
-      <div class="hero-overlay">
-        <h1>Welcome to Hotel Country Villa</h1>
-        <p>Stay with us, feel like family.</p>
-      </div>
-    </div>
-  </div>
-
-  <section class="booking-form">
-    <form>
-      <label>
-        Arrival
-        <input type="date" name="arrival" value="2025-05-25">
-      </label>
-      <label>
-        Departure
-        <input type="date" name="departure" value="2025-05-26">
-      </label>
-      <label>
-        Room
-        <select>
-          <option>1 Room, 2 Adult</option>
-          <option>1 Room, 1 Adult</option>
-          <option>2 Rooms, 4 Adults</option>
-        </select>
-      </label>
-      <label>
-        <input type="checkbox" name="flexible"> Flexible Dates
-      </label>
-      <button type="submit">Book Online</button>
-    </form>
-  </section>
-
-  <section class="contact-section">
-    <h2>Contact Us</h2>
-    <div class="contact-info">
-      <p><strong>Phone:</strong> +977-1234567890</p>
-      <p><strong>Email:</strong> hotelcountryvilla@gmail.com</p>
-      <p><strong>Address:</strong> Shyafru, Rasuwa, Nepal</p>
-    </section>
-  <script>
-  let currentSlide = 0;
-  const slides = document.querySelectorAll(".slide");
-
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.classList.remove("active");
-      if (i === index) slide.classList.add("active");
-    });
-  }
-
-  function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-  }
-
-  setInterval(nextSlide, 3000); // Change slide every 3 seconds
-</script>
-    <footer>
-    <p>&copy; 2025 Hotel Country View. All rights reserved.</p>
-  </footer>
+   </header>
 </body>
 </html>
